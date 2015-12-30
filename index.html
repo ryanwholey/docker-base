@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <input type="button" id="button"value="test"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("#id").onClick(function(){
+        $.get('localhost/test',function(data){
+          console.log(data);
+        })
+      })
+    })
+  </script>
+</body>
+</html>
